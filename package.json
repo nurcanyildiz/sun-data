@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "prepare": "git config core.hooksPath .husky",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,11 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "eslint": "^9.25.1",
+    "eslint-define-config": "^2.1.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "nodemon": "^3.1.9",
+    "typescript-eslint": "^8.31.0"
   }
 }
