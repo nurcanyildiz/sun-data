@@ -1,7 +1,7 @@
 const axios = require('axios');
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3002
 
 app.get('/sunData', async (req, res) => {
   const url = `https://api.sunrise-sunset.org/json?lat=36.72&lng=-4.42&formatted=0`;
